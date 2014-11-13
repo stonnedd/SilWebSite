@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="Silodisa" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soluciones integrales en Logística Farmacéutica a través de una sólida infraestructura que permite la entrega en más de 800 puntos a nivel nacional">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>Silodisa</title>
+    <link rel="shortcut icon" href="img/silodisaLogo.ico" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/neat-blue.css" rel="stylesheet" media="screen" id="neat-stylesheet">
+    <link href="/libs/lightbox/css/lightbox.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic,700italic|Lustria" rel="stylesheet" type="text/css" />
+</head>
+<body ng-app="app" ng-cloak>
+    <div id="nav-wrapper" class="background-white color-black">
+        <nav id="mainMenu" class="navbar navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar background-lead"></span>
+                        <span class="icon-bar background-lead"></span>
+                        <span class="icon-bar background-lead"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="img/silodisaLogo.jpg" alt="logo"></a>
+                </div>
+                <div class="collapse navbar-collapse navbar-ex1-collapse" ng-controller="layoutController">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html" ng-click="indexTab()">Inicio</a></li>
+                        <li><a href="company.html" ng-click="companyTab()">Nuestra<br />empresa</a></li>
+                        <li><a href="services.html" ng-click="servicesTab()">Nuestros<br />servicios</a></li>
+                        <li class="active"><a href="innovation.html">Innovación</a></li>
+                        <li><a href="values.html">Valor<br />compartido</a></li>
+                        <li><a href="politics.html">Política<br />integral</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <div>
+            <br />
+            <div class="background-clouds breadcrumbs-container">
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li class="active"><strong>Innovacion</strong></li>
+                    </ol>
+                </div>
+            </div>
+            <div>
+                <div class="container">
+                    <h3><i style="color:blue "><strong>Nuestro compromiso</strong></i> con la mejora continua</h3>
+                </div>
+            </div>
+
+            <section>
+                <div class="container" ng-controller="inovationController" ng-init="infraestructure()">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="list-group bright background-clouds color-text">
+                                <div class="list-group-item"><h3>Menu</h3></div>
+                                <a href="" ng-class="'list-group-item ' + (activeTab===0 ? 'active' : '')" ng-click="infraestructure()">Infraestructura</a>
+                                <a href="" ng-class="'list-group-item ' + (activeTab===1 ? 'active' : '')" ng-click="technology()">Innovaciones</a>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="content">
+                                <h1 style='font-weight:bolder'><span ng-bind-html="subTitle"> </span></h1>
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <p style="text-align:justify" ng-bind-html="textToShow"></p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img ng-src="img/{{img}}" alt="image" width="600" />
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+
+
+
+
+
+
+    </div>
+
+    <footer class="background-midnight-blue color-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>Menu</h3>
+                    <p class="social">
+                        <ul class="nav-footer">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="company.html">Nuestra empresa</a></li>
+                            <li><a href="services.html">Nuestros servicios</a></li>
+                            <li class="active"><a href="innovation.html">Inovación</a></li>
+                            <li><a href="values.html">Valor compartido</a></li>
+                            <li><a href="politics.html">Política integral</a></li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Redes Sociales</h3>
+                    <p class="social">
+                        <a href="https://www.facebook.com/pages/Silodisa-Sitio-Oficial/170324796357925?fref=ts"><span class="fa fa-facebook"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="https://www.youtube.com/user/SilodisaTV"><span class="fa fa-youtube"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="http://www.linkedin.com/in/silodisa"><span class="fa fa-linkedin"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="https://twitter.com/silodisa"><span class="fa fa-twitter"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <h3>Contact us</h3>
+                    <p class="testimonial">
+                        <dl class="dl-horizontal">
+                            <dt>Telefono:</dt>
+                            <dd>+52 (55) 1940 0600</dd>
+                            <dt>Correo electrónico <br />(ventas):</dt>
+                            <dd><br /></dd>
+                            <dd>contacto@silodisa.com.mx</dd>
+                            <dt>Correo electrónico<br /> (se parte):</dt>
+                            <dd><br /></dd>
+                            <dd>talento@silodisa.com.mx</dd>
+                            <dt>Dirección:</dt>
+                            <dd>Carretera Lago de Guadalupe Km. 27.5, Col. San Pedro Barrientos. Tlalnepantla de Baz, C.P. 54010.Estado de México.</dd>
+                        </dl>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6" style="align-content:center">
+                            <a href="http://idrasoft.com.mx/" style="font-size: x-small">Powerade by IDRA Soft 2014 </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/lib/angular/angular.min.js"></script>
+    <script src="js/shared/app.js"></script>
+    <script src="js/app/layoutCtrl.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/responsive-slider.js"></script>
+    <script src="libs/lightbox/js/lightbox-2.6.min.js"></script>
+    <script src="js/reduce-menu.js"></script>
+    <script src="js/match-height.js"></script>
+    <script src="/js/app/inovationCtrl.js"></script>
+
+</body>
+</html>
+
